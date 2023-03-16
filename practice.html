@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    .cat{
+        width:300px;
+        height:300px;
+        object-fit: cover;
+        object-position: top;
+
+    }
+    .catframe{
+        width:300px;
+        height:300px;
+        object-fit: cover;
+        object-position: top;
+        border-radius:10px;
+
+
+    }
+    .catround{
+        width:300px;
+        height:300px;
+        object-fit: cover;
+        object-position: top;
+        border-radius:150px;
+
+    }
+    </style>
+
+    <style>
+        .searchbar{
+            height:30px;
+            width:200px;
+            border-radius: 10px;
+            border:solid;border-color: rgb(183, 174, 174);
+            border-width: 1px;
+            padding-left: 20px;
+        
+        }
+
+    </style>
+
+    <style>
+        .google{
+            width:400px;
+            height:30px;
+            border-radius: 50px;
+            padding-left: 20px;
+            border:solid;border-color: rgb(183, 174, 174);
+            border-width: 1px;
+            box-shadow: 1px  1px 1px 1px rgb(0,0, 0,0.1);
+
+        }
+    </style>
+
+    <style>
+        .Email{
+            font-family:Arial;
+            color:rgb(30, 29, 29);
+        }
+    </style>
+    
+    <style>
+        .emailid{
+            height:25px;
+            width:300px;
+        }
+    </style>
+
+    <style>
+        .join{
+            font-family:Arial;
+            color:rgb(30, 29, 29);
+        }
+    </style>
+
+    <style>
+        .agree{
+            padding-top:15px;
+            padding-bottom:15px;
+            padding-left:155px;
+            padding-right:155px;
+            border:none;
+            border-radius:30px;
+            color:white;
+            font-size:15px;
+            background-color:rgb(52, 52, 197);
+        }
+
+        .agree:hover{
+            transition: 0.3s;
+            opacity:0.7;
+        }
+
+        .agree:active{
+            opacity:0.5;
+        }
+    </style>
+
+    <style>
+        .twittercat{
+            height:50px;
+            width:50px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 30px;
+            margin-top:40px;
+            margin-right: 30px;
+        }
+    </style>
+    <style>
+        .tweetsomething{
+            font-size:15px;
+            border:none;
+            padding-top: 7px ;
+            padding-left: 50px ;
+            padding-bottom:7px ;
+            padding-right: 50px;
+            border-radius: 20px;
+            
+        }
+    </style>
+    <style>
+        .tweeting{
+            border:none;
+            color:white;
+            background-color:rgb(52, 52, 197);
+            padding-right:30px;
+            padding-left:30px;
+            padding-top:8px;
+            padding-bottom:8px;
+            border-radius: 25px;
+            font-size: 15px;
+        }
+        .tweeting:hover{
+            transition: 0.3s;
+            opacity:0.7;
+        }
+
+        .tweeting:active{
+            opacity:0.5;
+        }
+    </style>
+
+    <style>
+        .requestride{
+            font-family: Arial;
+            font-size:30px;
+            font-weight:bold;
+        }
+    </style>
+
+    <style>
+        .address{
+            display: block;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:60px;
+            padding-right:50px;
+            margin-bottom:8px ;
+            border: none; 
+            background-color: rgb(241, 235, 235);
+        }
+    </style>
+    <style>
+        .destination{
+            display: block;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:60px;
+            padding-right:50px;
+            margin-top:8px ;
+            border: none;
+            margin-bottom: 30px;
+            background-color: rgb(241, 235, 235);
+        }
+    </style>
+
+    <style>
+        .request{
+            background-color: black;
+            color: rgb(241, 235, 235);
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:30px;
+            padding-right:30px;
+            border: none;
+        }
+        .request:hover{
+            transition: 0.4s;
+            opacity:0.7;
+            border: none; 
+        }
+
+        .request:active{
+            opacity:0.5;
+            border: none; 
+        }
+    </style>
+
+    <style>
+        .schedule{
+            
+            color: black;
+            background-color: rgb(241, 235, 235);
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:25px;
+            padding-right:25px;
+            border: none;
+        
+        }
+        .schedule:hover{
+            transition: 0.4s;
+            background-color:  rgb(223, 212, 212);
+            border: none;
+        }
+
+        .schedule:active{
+            opacity:0.5;
+            border: none;
+        }
+    </style>
+
+    <style>
+        .kitten{
+            height:280px;
+            width:250px;
+            object-fit: cover;
+            object-position: top;
+            
+
+        }
+    </style>
+
+    <style>
+        .kittyname{
+            font-family: Arial;
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    </style>
+
+    <style>
+        .mutualfriends{
+
+            text-align: center;
+            font-family: Arial;
+            color:grey;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+    </style>
+
+    <style>
+        .addasfriend{
+            border: none;
+            font-family: Arial;
+            background-color:rgb(52, 52, 197) ;
+            color: white;
+            padding-right: 60px;
+            padding-left: 60px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 25px ;
+            margin-bottom: 30px;
+            
+        }
+        .addasfriend:hover{
+            transition: 0.4s;
+            opacity: 0.8;
+
+        }
+
+        .addasfriend:active{
+            opacity: 0.5;
+        }
+    </style>
+
+
+<style>
+    .kitty{
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow:1px  1px 1px 1px rgb(0,0, 0,0.1) ;
+        
+        
+    }
+</style>
+    
+
+    
+
+</head>
+
+    <body>
+       <img class="cat" src="cat.jpg">
+       <img class="catframe" src="cat.jpg">
+       <img class="catround" src="cat.jpg">
+       <br>
+       <br>
+       <br>
+       <input class="searchbar" type="text" placeholder="Search">
+       <br>
+       <br>
+       <br>
+       <input class="google" type="text" placeholder="Search Google or type a URL">
+       <br>
+       <br>
+       <br>
+
+       <p class="Email">
+        Email
+       </p>
+
+       <input class="emailid" type="text"  >
+
+       <p class="join">
+        By clicking Agree & Join, you agree to the Privacy Policy.
+       </p>
+       <br>
+    
+       <button class="agree">
+        Agree & Join 
+       </button>
+
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+
+       <img class="twittercat" src="cat.jpg">
+       <input class="tweetsomething" type="text" placeholder="What's happening?">
+       <button class="tweeting">
+        Tweet
+       </button>
+       <br>
+       <br>
+       <br>
+
+
+       <p class="requestride">
+        Request a ride now
+       </p>
+
+       <input class="address" type="text" placeholder="Enter pick up location">
+
+       <input class="destination" type="text" placeholder="Enter Destination">
+
+       <button class="request">
+        Request now
+       </button>
+
+       <button class="schedule">
+        Schedule for later
+       </button>
+
+       <div class="kitty">
+        <img class="kitten" src="kitten1.jpeg">
+        <p class="kittyname">
+            Oliver
+        </p>
+        <p class="mutualfriends">
+            2 mutual friends
+
+        </p>
+
+        <button class="addasfriend">
+            Add as friend
+        </button>
+
+       </div>
+
+       <div class="kitty">
+        <img class="kitten" src="kitten2.webp">
+        <p class="kittyname">
+            Mimi
+        </p>
+
+        <p class="mutualfriends">
+            3 mutual friends
+
+        </p>
+        <button class="addasfriend">
+            Add as friend
+        </button>
+
+       </div>
+
+       <div class="kitty">
+        <img class="kitten" src="cat.jpg">
+        <p class="kittyname">
+            Rex
+        </p>
+
+        <p class="mutualfriends">
+            4 mutual friends
+
+        </p>
+        <button class="addasfriend">
+            Add as friend
+        </button>
+       </div>
+
+
+      
+
+
+
+
